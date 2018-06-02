@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@mipmap/home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/create"
+        android:icon="@mipmap/create"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item1"
+        android:title="菜单1"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/about"
+        android:title="检查更新"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/update"
+        android:title="关于应用"
+        app:showAsAction="never"/>
+
+</menu>

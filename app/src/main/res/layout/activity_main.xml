@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/path_label"
+        android:text="当前路径"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:maxLines="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/file_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:drawSelectorOnTop="true"
+            android:smoothScrollbar="true"
+            android:longClickable="true"
+            android:background="@color/white" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/paste_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom | end"
+            android:layout_margin="20dp"
+            android:src="@mipmap/paste"
+            app:backgroundTint="#23C1E3" />
+    </FrameLayout>
+
+</LinearLayout>
